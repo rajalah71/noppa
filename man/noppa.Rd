@@ -11,7 +11,7 @@ noppa(sivuja = 6, lkm = 1, takaisinpalautus = TRUE)
 
 \item{lkm}{Heittojen lukumäärä (oletuksena 1).}
 
-\item{takaisinpalautus}{Onko nopanheitot takaisinpalautuvia (oletuksena TRUE).}
+\item{takaisinpalautus}{Onko nopanheitot takaisinpalautuvia, eli toisistaan riippumattomia (oletuksena TRUE).}
 }
 \value{
 Tulostaa nopanheitot ja niiden summan.
