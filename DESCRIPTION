@@ -1,7 +1,7 @@
 Package: noppa
 Type: Package
 Title: n-sivuinen noppa
-Version: 2.0.0
+Version: 2.0.1
 Author: Johannes Rajala
 Maintainer: Johannes Rajala <jtraja@proton.me>
 Description: Heitä n-sivuista noppaa k kertaa, näytä silmäluvut ja niiden summa.
@@ -9,3 +9,6 @@ License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
+Imports: 
+    graphics (>= 4.3.2),
+    stats (>= 4.3.2)

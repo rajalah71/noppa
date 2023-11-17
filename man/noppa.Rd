@@ -4,23 +4,25 @@
 \alias{noppa}
 \title{Noppaheitto}
 \usage{
-noppa(sivuja = 6, lkm = 1, takaisinpalautus = TRUE)
+noppa(sivuja = 6, lkm = 1, plot = FALSE, takaisinpalautus = TRUE)
 }
 \arguments{
 \item{sivuja}{Nopan sivujen lukumäärä (oletuksena 6).}
 
 \item{lkm}{Heittojen lukumäärä (oletuksena 1).}
 
+\item{plot}{Tehdäänkö kuvaaja vai ei (oletuksena FALSE).}
+
 \item{takaisinpalautus}{Onko nopanheitot takaisinpalautuvia, eli toisistaan riippumattomia (oletuksena TRUE).}
 }
 \value{
-Tulostaa nopanheitot ja niiden summan.
+Tulostaa nopanheitot ja niiden summan, sekä summan pistetodennäköisyysfunktion.
 }
 \description{
 Simuloi nopanheiton.
 }
 \examples{
-# Heitä noppaa 5 kertaa
+# Heitä perinteistä 6 sivuista noppaa 5 kertaa
 noppa(6, 5)
 
 }
