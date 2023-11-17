@@ -1,0 +1,25 @@
+---
+output: github_document
+---
+
+# Noppa
+
+Heitä n-sivuista noppaa k kertaa, esitä tulokset, laske niiden summa ja sen todennäköisyys. Lisäksi funktio voi piirtää summan pistetodennäköisyysfunktion.
+
+```{r}
+library(noppa)
+
+noppa(6)
+```
+
+```{r}
+noppa(6, 2)
+```
+
+```{r}
+noppa(6, 2, plot = TRUE)
+```
+
+```{r}
+noppa(8, 3, plot = TRUE)
+```

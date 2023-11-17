@@ -28,6 +28,8 @@ noppa = function(sivuja = 6, lkm = 1, plot = FALSE,  takaisinpalautus = TRUE){
     for(i in 2:lkm){
       pdf = convolve(pdf, rep(1/sivuja, sivuja), type = "open")
     }
+    cat(paste0("P(summa ", lkm, "d", sivuja,  " <= ", sum(heitot), ") = ", round(sum(pdf[1:(sum(heitot)-(lkm-1))]), 3)))
+
     if(plot == TRUE){
     # plot the pmf
     plot(seq(lkm, lkm*sivuja), pdf, type = "b", main = "Nopanheiton summan jakauma", xlab = "Summa", ylab = "Todennäköisyys")
@@ -36,6 +38,5 @@ noppa = function(sivuja = 6, lkm = 1, plot = FALSE,  takaisinpalautus = TRUE){
     # add a legend and the probability of P(sum <= ) the obtained result in a box
     legend("topleft", legend = paste0("P(summa ", lkm, "d", sivuja,  " <= ", sum(heitot), ") = ", round(sum(pdf[1:(sum(heitot)-(lkm-1))]), 3)), bty = "n")
     }
-    cat(paste0("P(summa ", lkm, "d", sivuja,  " <= ", sum(heitot), ") = ", round(sum(pdf[1:(sum(heitot)-(lkm-1))]), 3)))
   }
 }
