@@ -22,8 +22,8 @@
 noppa = function(lkm = 1, sivuja = 20, plot = FALSE,  takaisinpalautus = TRUE){
   heitot = sample(seq(sivuja), lkm, replace = takaisinpalautus)
   # cat the results separated by commas
-  cat("Heitit:", paste(heitot, collapse = ", "))
-  if(lkm > 1) cat("\nSumma:", sum(heitot),"\n")
+  cat("Heitit:", paste(heitot, collapse = ", "), "\n")
+  if(lkm > 1) cat("Summa:", sum(heitot),"\n")
 
   if(lkm > 1){
     # Calculate the pmf of the sum
