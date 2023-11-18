@@ -17,32 +17,32 @@ noppa(lkm, sivuja, plot, takaisinpalautus)
 noppa(lkm = 1, sivuja = 6)
 ```
 
-    ## Heitit: 1
+    ## Heitit: 3
 
 ``` r
 noppa(2,6)
 ```
 
-    ## Heitit: 4, 4
-    ## Summa: 8 
-    ## P(2d6 <= 8) = 0.722
+    ## Heitit: 4, 5
+    ## Summa: 9 
+    ## P(2d6 <= 9) = 0.833
 
 ``` r
 noppa(2,6, plot = TRUE)
 ```
 
-    ## Heitit: 6, 5
-    ## Summa: 11 
-    ## P(2d6 <= 11) = 0.972
+    ## Heitit: 1, 1
+    ## Summa: 2 
+    ## P(2d6 <= 2) = 0.028
 
-![](readme_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](intro_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ``` r
 noppa(3,8, plot = TRUE)
 ```
 
-    ## Heitit: 6, 7, 6
-    ## Summa: 19 
-    ## P(3d8 <= 19) = 0.932
+    ## Heitit: 4, 8, 3
+    ## Summa: 15 
+    ## P(3d8 <= 15) = 0.684
 
-![](readme_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](intro_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
