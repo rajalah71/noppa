@@ -4,10 +4,10 @@
 #' Heittää k kertaa n sivuista noppaa, Heitot, niiden summa ja todennäköisyys tulostetaan.
 #'
 #'
-#' @param sivuja Nopan sivujen lukumäärä (oletuksena 6).
 #' @param lkm Heittojen lukumäärä (oletuksena 1).
-#' @param takaisinpalautus Onko nopanheitot takaisinpalautuvia, eli toisistaan riippumattomia (oletuksena TRUE).
+#' @param sivuja Nopan sivujen lukumäärä (oletuksena 20).
 #' @param plot Tehdäänkö kuvaaja vai ei (oletuksena FALSE).
+#' @param takaisinpalautus Onko nopanheitot takaisinpalautuvia (oletuksena TRUE).
 #'
 #' @return Tulostaa nopanheitot ja niiden summan, sekä summan pistetodennäköisyysfunktion.
 #'
@@ -43,7 +43,7 @@ noppa = function(lkm = 1, sivuja = 20, plot = FALSE,  takaisinpalautus = TRUE){
     }
   } else {
     cat(paste0("P(", lkm, "d", sivuja,  " <= ", heitot, ") = ", round(heitot/sivuja, 3)), "\n")
-    
+
     if(plot == TRUE){
       # plot the pmf
       plot(seq(1, sivuja), rep(1/sivuja, sivuja), type = "b", main = "Nopanheiton jakauma", xlab = "Tulos", ylab = "Todennäköisyys")
@@ -53,6 +53,6 @@ noppa = function(lkm = 1, sivuja = 20, plot = FALSE,  takaisinpalautus = TRUE){
       legend("topleft", legend = paste0("P(", lkm, "d", sivuja,  "  <= ", heitot, ") = ", round(heitot/sivuja, 3)), bty = "n")
     }
   }
-  
-  
+
+
 }
