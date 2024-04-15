@@ -41,5 +41,18 @@ noppa = function(lkm = 1, sivuja = 20, plot = FALSE,  takaisinpalautus = TRUE){
     # add a legend and the probability of P(sum <= ) the obtained result in a box
     legend("topleft", legend = paste0("P(", lkm, "d", sivuja,  " <= ", sum(heitot), ") = ", round(sum(pmf[1:(sum(heitot)-(lkm-1))]), 3)), bty = "n")
     }
+  } else {
+    cat(paste0("P(", lkm, "d", sivuja,  " <= ", heitot, ") = ", round(heitot/sivuja, 3)), "\n")
+    
+    if(plot == TRUE){
+      # plot the pmf
+      plot(seq(1, sivuja), rep(1/sivuja, sivuja), type = "b", main = "Nopanheiton jakauma", xlab = "Tulos", ylab = "Todennäköisyys")
+      # plot the obtained result
+      points(heitot, 1/sivuja, col = "red", pch = 19)
+      # add a legend and the probability of P(sum <= ) the obtained result in a box
+      legend("topleft", legend = paste0("P(", lkm, "d", sivuja,  "  <= ", heitot, ") = ", round(heitot/sivuja, 3)), bty = "n")
+    }
   }
+  
+  
 }
