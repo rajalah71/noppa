@@ -1,10 +1,10 @@
 Package: noppa
 Type: Package
 Title: n-sivuinen noppa
-Version: 3.0.1
+Version: 3.0.2
 Author: Johannes Rajala
 Maintainer: Johannes Rajala <jtraja@proton.me>
-Description: Heitä n-sivuista noppaa k kertaa, näytä silmäluvut ja niiden summa.
+Description: Heitä k kertaa n-sivuista noppaa, näytä silmäluvut, niiden summa ja summan todennäköisyys.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
