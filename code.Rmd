@@ -7,6 +7,7 @@ output: github_document
 Heitä k kertaa n-sivuista noppaa, esitä tulokset, laske niiden summa ja sen todennäköisyys. Lisäksi funktio voi piirtää summan pistetodennäköisyysfunktion.
 
 ```{r}
+# remotes::install_github("rajalah71/noppa")
 library(noppa)
 ```
 
